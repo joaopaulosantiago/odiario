@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Diário dos Oráculos do Senhor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            background-color: #000000;
+            color: #ffffff;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            border-bottom: 1px solid #333;
+        }
+
+        header h1 {
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+        }
+
+        /* Container geral */
+        .container {
+            width: 95%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Seção de texto introdutório */
+        .intro-section {
+            background-color: #000000;
+            padding: 3rem 0;
+            text-align: center;
+            margin: 2rem auto;
+            max-width: 1200px;
+        }
+
+        .logo-container {
+            max-width: 300px;
+            margin: 0 auto 3rem;
+        }
+
+        .logo-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .intro-text {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            line-height: 1.8;
+        }
+
+        .scripture-header {
+            font-size: 1.2rem;
+            color: #cccccc;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        .scripture-title {
+            font-size: 1.4rem;
+            color: #ffff00;
+            margin-bottom: 2rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .scripture-content {
+            text-align: left;
+            margin-bottom: 2.5rem;
+            color: #ffffff;
+            font-size: 1.1rem;
+        }
+
+        .scripture-content p {
+            margin-bottom: 1rem;
+            padding-left: 2rem;
+        }
+
+        .scripture-declaration {
+            font-size: 1.3rem;
+            color: #ffffff;
+            margin-top: 2rem;
+            line-height: 2;
+        }
+
+        .highlight {
+            color: #ffff00;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
+
+        /* Posts */
+        .posts-section {
+            margin-top: 2rem;
+        }
+
+        .post {
+            background-color: #1a1a1a;
+            border-radius: 8px;
+            padding: clamp(1rem, 3vw, 2rem);
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(255,255,255,0.1);
+            border: 1px solid #333;
+        }
+
+        .post-title {
+            color: #ffffff;
+            margin-bottom: 1rem;
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+        }
+
+        .post-title a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .post-title a:hover {
+            color: #cccccc;
+        }
+
+        .post-date {
+            color: #cccccc;
+            font-size: clamp(0.8rem, 2vw, 0.9rem);
+            margin-bottom: 1rem;
+        }
+
+        .post-content {
+            margin-bottom: 1rem;
+            color: #f0f0f0;
+            font-size: clamp(0.9rem, 2.5vw, 1rem);
+        }
+
+        .read-more {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #cccccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .read-more:hover {
+            color: #ffffff;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            background-color: #1a1a1a;
+            color: white;
+            margin-top: 2rem;
+            border-top: 1px solid #333;
+        }
+
+        /* Responsividade */
+        @media screen and (max-width: 767px) {
+            .container {
+                width: 100%;
+                padding: 0 10px;
+            }
+
+            .post {
+                padding: 1rem;
+            }
+
+            .intro-text {
+                padding: 0 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <h1>O Diário dos Oráculos do Senhor</h1>
+        </div>
+    </header>
+
+    <!-- Texto introdutório com logo -->
+    <section class="intro-section">
+        <div class="logo-container">
+            <img src="odiario.png" alt="O Diário dos Oráculos do Senhor">
+        </div>
+        <div class="intro-text">
+            <div class="scripture-header">Está escrito, assim diz:</div>
+            <div class="scripture-title">OS ORÁCULOS DO SENHOR; YAHVEH:</div>
+            <div class="bible-verse">
+                "O profeta que tiver a audácia de proferir em meu nome uma palavra que eu não lhe mandei dizer, ou que se atrever a falar em nome de outros deuses, será morto. Se disseres a ti 'como posso eu distinguir a palavra que não vem do senhor?' Quando o profeta tiver falado em nome do senhor, se o que ele disse não se realizar, é que essa palavra não veio do senhor. O profeta falou presunçosamente. Não o temas!"
+                <div class="verse-reference">Deuteronômio 18:20-22</div>
+            </div>
+            <div class="scripture-declaration">
+                O DIÁRIO DOS ORÁCULOS DO SENHOR É:<br>
+                <span class="highlight">A REVELAÇÃO DA PALAVRA DO SENHOR;<br>A TORAH / A BÍBLIA SAGRADA.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de posts -->
+    <section class="posts-section">
+        <main class="container">
+            <article class="post">
+                <h2 class="post-title">
+                    <a href="single-post.html">Os Oráculos do Senhor</a>
+                </h2>
+                <div class="post-date">10 de Fevereiro, 2025</div>
+                <div class="post-content">
+                   <p>Acontecerá nos últimos dias – é Deus quem fala –, que derramarei do meu Espírito sobre todo ser vivo...</p>
+                    <a href="single-post.html" class="read-more">Continuar lendo →</a>
+                </div>
+            </article>
+
+            <article class="post">
+                <h2 class="post-title">
+                    <a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                </h2>
+                <div class="post-date">15 de Fevereiro, 2025</div>
+                <div class="post-content">
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                    <a href="single-post.html" class="read-more">Continuar lendo →</a>
+                </div>
+            </article>
+            
+            <article class="post">
+                <h2 class="post-title">
+                    <a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                </h2>
+                <div class="post-date">15 de Fevereiro, 2025</div>
+                <div class="post-content">
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                    <a href="single-post.html" class="read-more">Continuar lendo →</a>
+                </div>
+            </article>
+            
+            <article class="post">
+                <h2 class="post-title">
+                    <a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                </h2>
+                <div class="post-date">15 de Fevereiro, 2025</div>
+                <div class="post-content">
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                    <a href="single-post.html" class="read-more">Continuar lendo →</a>
+                </div>
+            </article>           
+        </main>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 O Diário dos Oráculos do Senhor. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
