@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="O Diário dos Oráculos do Senhor - Revelações da Palavra do Senhor">
+    <title>O Diário dos Oráculos do Senhor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind-config.js"></script>
+</head>
+<body class="font-serif leading-relaxed bg-black text-white min-h-screen flex flex-col">
+    <!-- Placeholder para o Cabeçalho -->
+    <div id="header-placeholder"></div>
+
+    <main class="flex-grow container mx-auto px-4 py-8 space-y-12">
+        <!-- Placeholder para a Seção da Escritura -->
+        <div id="scripture-placeholder"></div>
+
+        <!-- Seção de Posts -->
+        <section class="max-w-4xl mx-auto space-y-8">
+            <div id="posts-container" class="space-y-8">
+                <article class="bg-gradient-to-br from-gray-900 to-black rounded-lg p-6 md:p-8 shadow-lg border border-gray-800 hover:border-gray-700 transition-colors duration-300">
+                    <h2 class="text-xl md:text-2xl mb-4 font-semibold">
+                        <a href="single-post.html" class="text-white hover:text-scripture-light transition-colors duration-300" data-post-id="post-oraculos">
+                            Capítulo 1: O Diário dos Oráculos do Senhor
+                        </a>
+                    </h2>
+                </article>
+
+                <article class="bg-gradient-to-br from-gray-900 to-black rounded-lg p-6 md:p-8 shadow-lg border border-gray-800 hover:border-gray-700 transition-colors duration-300">
+                    <h2 class="text-xl md:text-2xl mb-4 font-semibold">
+                        <a href="post-8.html" class="text-white hover:text-scripture-light transition-colors duration-300" data-post-id="post-chamado-profético">
+                            Capítulo 2: O Chamado Profético da Nova Aliança
+                        </a>
+                    </h2>
+                </article>
+
+                <article class="bg-gradient-to-br from-gray-900 to-black rounded-lg p-6 md:p-8 shadow-lg border border-gray-800 hover:border-gray-700 transition-colors duration-300">
+                    <h2 class="text-xl md:text-2xl mb-4 font-semibold">
+                        <a href="post-7.html" class="text-white hover:text-scripture-light transition-colors duration-300" data-post-id="post-revelacoes-divinas">
+                            Capítulo 3: Revelações Divinas para os Servos do Altíssimo
+                        </a>
+                    </h2>
+                </article>
+
+                <article class="bg-gradient-to-br from-gray-900 to-black rounded-lg p-6 md:p-8 shadow-lg border border-gray-800 hover:border-gray-700 transition-colors duration-300">
+                    <h2 class="text-xl md:text-2xl mb-4 font-semibold">
+                        <a href="post-6.html" class="text-white hover:text-scripture-light transition-colors duration-300" data-post-id="post-palavras-profeticas">
+                            Capítulo 4: Palavras Proféticas para a Geração Atual
+                        </a>
+                    </h2>
+                </article>
+
+                <article class="bg-gradient-to-br from-gray-900 to-black rounded-lg p-6 md:p-8 shadow-lg border border-gray-800 hover:border-gray-700 transition-colors duration-300">
+                    <h2 class="text-xl md:text-2xl mb-4 font-semibold">
+                        <a href="post-5.html" class="text-white hover:text-scripture-light transition-colors duration-300" data-post-id="post-oraculos-avivamento">
+                            Capítulo 5: Oráculos Divinos sobre o Avivamento Global
+                        </a>
+                    </h2>
+                </article>
+
+                <article class="bg-gradient-to-br from-gray-900 to-black rounded-lg p-6 md:p-8 shadow-lg border border-gray-800 hover:border-gray-700 transition-colors duration-300">
+                    <h2 class="text-xl md:text-2xl mb-4 font-semibold">
+                        <a href="post-4.html" class="text-white hover:text-scripture-light transition-colors duration-300" data-post-id="post-mensagens-celestiais">
+                            Capítulo 6: Mensagens Celestiais para a Igreja Contemporânea
+                        </a>
+                    </h2>
+                </article>
+
+                <article class="bg-gradient-to-br from-gray-900 to-black rounded-lg p-6 md:p-8 shadow-lg border border-gray-800 hover:border-gray-700 transition-colors duration-300">
+                    <h2 class="text-xl md:text-2xl mb-4 font-semibold">
+                        <a href="post-3.html" class="text-white hover:text-scripture-light transition-colors duration-300" data-post-id="post-sinais-tempos">
+                            Capítulo 7: Os Sinais dos Tempos Segundo as Escrituras
+                        </a>
+                    </h2>
+                </article>
+
+                <article class="bg-gradient-to-br from-gray-900 to-black rounded-lg p-6 md:p-8 shadow-lg border border-gray-800 hover:border-gray-700 transition-colors duration-300">
+                    <h2 class="text-xl md:text-2xl mb-4 font-semibold">
+                        <a href="post-2.html" class="text-white hover:text-scripture-light transition-colors duration-300" data-post-id="post-visoes-profeticas">
+                            Capítulo 8: Visões Proféticas dos Últimos Tempos
+                        </a>
+                    </h2>
+                </article>
+            </div>
+
+
+        </section>
+
+        <!-- Placeholder para a Seção de Doação -->
+        <div id="donation-placeholder"></div>
+    </main>
+
+    <!-- Placeholder para o Rodapé -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        async function loadHTML(url, elementId) {
+            try {
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error(`Failed to load ${url}: ${response.statusText}`);
+                }
+                const text = await response.text();
+                const element = document.getElementById(elementId);
+                if (element) {
+                    element.outerHTML = text; // Replace the placeholder div with the fetched content
+                } else {
+                    console.error(`Element with id '${elementId}' not found.`);
+                }
+            } catch (error) {
+                console.error('Error loading HTML partial:', error);
+                document.getElementById(elementId).innerHTML = `<p class="text-red-500 text-center">Error loading content from ${url}.</p>`;
+            }
+        }
+
+        const READ_POSTS_KEY = 'diarioOraculosReadPosts';
+
+        function getReadPosts() {
+            const stored = localStorage.getItem(READ_POSTS_KEY);
+            return stored ? new Set(JSON.parse(stored)) : new Set();
+        }
+
+        function saveReadPost(postId, readPostsSet) {
+            readPostsSet.add(postId);
+            localStorage.setItem(READ_POSTS_KEY, JSON.stringify(Array.from(readPostsSet)));
+        }
+
+        function applyStylesToReadPosts() {
+            const readPosts = getReadPosts();
+            document.querySelectorAll('article a[data-post-id]').forEach(link => {
+                const postId = link.dataset.postId;
+                if (readPosts.has(postId)) {
+                    link.classList.remove('text-white');
+                    link.classList.add('text-scripture-read');
+                    // O hover:text-scripture-light da classe original ainda se aplicará
+                } else {
+                    link.classList.add('text-white'); // Garante o estado padrão se não lido
+                    link.classList.remove('text-scripture-read');
+                }
+            });
+        }
+
+        function handlePostHeaderClick(event) {
+            const linkElement = event.currentTarget; // O elemento <a> que foi clicado
+            const postId = linkElement.dataset.postId;
+
+            if (postId) {
+                const readPosts = getReadPosts();
+                if (!readPosts.has(postId)) { // Marcar como lido apenas se não estiver marcado
+                    saveReadPost(postId, readPosts);
+                    linkElement.classList.remove('text-white');
+                    linkElement.classList.add('text-scripture-read');
+                }
+                // A navegação para o href do link ocorrerá normalmente
+            }
+        }
+
+        // Carregar parciais e depois configurar interações dos posts
+        Promise.all([
+            loadHTML('partials/header.html', 'header-placeholder'),
+            loadHTML('partials/footer.html', 'footer-placeholder'),
+            loadHTML('partials/scripture-section.html', 'scripture-placeholder'),
+            loadHTML('partials/donation-section.html', 'donation-placeholder')
+        ]).finally(() => {
+            // Aplicar estilos a posts já lidos ao carregar a página
+            applyStylesToReadPosts();
+            // Adicionar event listeners aos cabeçalhos dos posts
+            document.querySelectorAll('article a[data-post-id]').forEach(link => {
+                link.addEventListener('click', handlePostHeaderClick);
+            });
+        });
+    </script>
+</body>
+</html>
